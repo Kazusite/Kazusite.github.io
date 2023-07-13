@@ -1,0 +1,215 @@
+/*root*/
+
+:root {
+    font-family: 'Cherry Bomb One', cursive;
+}
+
+.font-maru {
+    font-family: "ヒラギノ丸ゴ ProN";
+}
+
+/* Theme */
+/* Dark */
+@media (prefers-color-scheme: dark) {
+    :root {
+        background-color: #000;
+        color: #fff;
+    }
+
+    a.link {
+        color: black;
+        background-color: white;
+        border: 2px solid black;
+    }
+
+    ul {
+        border: solid 3px white;
+    }
+
+    .plainlink {
+        color: white;
+    }
+
+
+}
+
+/* Light */
+@media (prefers-color-scheme: light) {
+    :root {
+        background-color: #ffffff;
+    }
+
+    a.link {
+        color: white;
+        background-color: black;
+        border: 2px solid white;
+    }
+
+    ul {
+        border: solid 3px black;
+    }
+
+    .plainlink {
+        color: black;
+    }
+}
+
+/* 文字の場所 */
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+/* Padding */
+.padding2rem {
+    padding: 2rem;
+}
+
+/*プロフィール画像*/
+
+.person {
+    border-radius: 50%;
+    max-width: 10em;
+    max-height: 10em;
+}
+
+.nametitle {
+    font-size: 45px;
+    font-family: 'Cherry Bomb One', cursive;
+    transition: 0.35s;
+}
+
+/*プロフィールの箇条書き*/
+
+ul {
+    /*ボックス内の余白*/
+    padding: 0.5em 0.5em 0.5em 2em;
+    /*線の種類 太さ 色*/
+}
+
+ul li {
+    /*文の行の高さ*/
+    line-height: 1.5;
+    /*前後の文との余白*/
+    padding: 0.5em 0;
+}
+
+
+/*レスポンシブ画面対応*/
+/* PC */
+
+@media screen and (min-width: 500px) {
+
+    .person:hover {
+        transform: scale(1.05);
+    }
+
+    .person {
+        transition: 0.35s;
+    }
+
+    .nametitle:hover {
+        transform: scale(1.1);
+    }
+
+    .padding {
+        margin: 2rem;
+    }
+
+    .div-profile {
+        display: flex;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .br-mobile {
+        display: none;
+    }
+
+    .link {
+        max-width: 35%;
+    }
+
+    /* PCのTheme対応 */
+    @media (prefers-color-scheme: dark) {
+        a.githublink:hover {
+            color: white;
+            background: black;
+            border: 2px solid white;
+        }
+
+        a.instalink:hover {
+            color: white;
+            background: #d6249f;
+            background: -webkit-linear-gradient(45deg, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+            background: linear-gradient(45deg, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+            border: 2px solid white;
+        }
+
+        .plainlink:hover {
+            color: gainsboro;
+        }
+    }
+
+    @media (prefers-color-scheme: light) {
+        a.githublink:hover {
+            color: black;
+            background: white;
+            border: 2px solid black;
+        }
+
+        a.instalink:hover {
+            color: white;
+            background: #d6249f;
+            background: -webkit-linear-gradient(45deg, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+            background: linear-gradient(45deg, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+            border: 2px solid black;
+        }
+
+        .plainlink:hover {
+            color: lightslategray;
+        }
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 500px) {
+    .padding {
+        margin: 0.3rem;
+    }
+
+    .link {
+        max-width: 500px;
+    }
+}
+
+.tophr {
+    background-color: greenyellow;
+    border: none;
+    height: 3px;
+}
+
+.title {
+    padding: 1rem 2rem;
+    border-left: 6px double;
+    font-size: 30px;
+}
+
+.link {
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    font-size: 20px;
+    font-family: "ヒラギノ丸ゴ ProN";
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
