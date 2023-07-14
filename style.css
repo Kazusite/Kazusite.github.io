@@ -91,7 +91,8 @@
 ul {
     /*ボックス内の余白*/
     padding: 0.5em 0.5em 0.5em 2em;
-    /*線の種類 太さ 色*/
+
+    transition: 0.35s;
 }
 
 ul li {
@@ -177,6 +178,14 @@ ul li {
             color: lightslategray;
         }
     }
+
+    ul:hover {
+        transform: scale(1.02);
+    }
+
+    .subtitle:hover {
+        transform: scale(1.1);
+    }
 }
 
 /* Mobile */
@@ -200,6 +209,12 @@ ul li {
     padding: 1rem 2rem;
     border-left: 6px double;
     font-size: 30px;
+    transition: 0.35s;
+}
+
+.subtitle {
+    text-align: center;
+    transition: 0.35s;
 }
 
 .link {
