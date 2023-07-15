@@ -163,6 +163,18 @@ ul li {
             border: 2px solid white;
         }
 
+        a.qiitalink:hover {
+            color: white;
+            background: #55c500;
+            border: 2px solid white;
+        }
+
+        a.gitlablink:hover {
+            color: white;
+            background: rgb(209, 80, 54);
+            border: 2px solid white;
+        }
+
         a.legacylink:hover {
             color: white;
             background: #4169e1;
@@ -186,6 +198,18 @@ ul li {
             background: #d6249f;
             background: -webkit-linear-gradient(45deg, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
             background: linear-gradient(45deg, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+            border: 2px solid black;
+        }
+
+        a.qiitalink:hover {
+            color: white;
+            background: #55c500;
+            border: 2px solid black;
+        }
+
+        a.gitlablink:hover {
+            color: black;
+            background: rgb(209, 80, 54);
             border: 2px solid black;
         }
 
