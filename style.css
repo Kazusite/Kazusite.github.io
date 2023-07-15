@@ -91,7 +91,7 @@
 ul {
     /*ボックス内の余白*/
     padding: 0.5em 0.5em 0.5em 2em;
-
+    font-family: "ヒラギノ丸ゴ ProN";
     transition: 0.35s;
 }
 
@@ -102,6 +102,15 @@ ul li {
     padding: 0.5em 0;
 }
 
+/* バカでかい */
+
+@media screen and (min-width: 1000px) {
+    :root {
+        margin: auto;
+        max-width: 1000px;
+    }
+
+}
 
 /*レスポンシブ画面対応*/
 /* PC */
@@ -154,6 +163,12 @@ ul li {
             border: 2px solid white;
         }
 
+        a.legacylink:hover {
+            color: white;
+            background: #4169e1;
+            border: 2px solid white;
+        }
+
         .plainlink:hover {
             color: gainsboro;
         }
@@ -171,6 +186,12 @@ ul li {
             background: #d6249f;
             background: -webkit-linear-gradient(45deg, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
             background: linear-gradient(45deg, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+            border: 2px solid black;
+        }
+
+        a.legacylink:hover {
+            color: white;
+            background: #4169e1;
             border: 2px solid black;
         }
 
