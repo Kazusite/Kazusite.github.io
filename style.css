@@ -208,9 +208,9 @@ ul li {
         }
 
         a.gitlablink:hover {
-            color: black;
+            color: white;
             background: rgb(209, 80, 54);
-            border: 2px solid white;
+            border: 2px solid black;
         }
 
         a.legacylink:hover {
