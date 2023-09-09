@@ -4,8 +4,9 @@
     font-family: 'Cherry Bomb One';
 }
 
-.font-maru {
-    font-family: "ヒラギノ丸ゴ ProN";
+/* 文字の場所 */
+.center {
+    text-align: center;
 }
 
 /* Theme */
@@ -30,7 +31,6 @@
         color: white;
     }
 
-
 }
 
 /* Light */
@@ -54,30 +54,10 @@
     }
 }
 
-/* 文字の場所 */
-.center {
-    text-align: center;
-}
-
-.left {
-    text-align: left;
-}
-
-.right {
-    text-align: right;
-}
-
-/* Padding */
-.padding2rem {
-    padding: 2rem;
-}
-
 /*プロフィール画像*/
 
 .person {
     border-radius: 50%;
-    max-width: 10em;
-    max-height: 10em;
 }
 
 .nametitle {
@@ -89,16 +69,13 @@
 /*プロフィールの箇条書き*/
 
 ul {
-    /*ボックス内の余白*/
     padding: 0.5em 0.5em 0.5em 2em;
     font-family: "ヒラギノ丸ゴ ProN";
     transition: 0.35s;
 }
 
 ul li {
-    /*文の行の高さ*/
     line-height: 1.5;
-    /*前後の文との余白*/
     padding: 0.5em 0;
 }
 
@@ -133,7 +110,7 @@ ul li {
         margin: 2rem;
     }
 
-    .div-profile {
+    .profile {
         display: flex;
         align-items: center;
         gap: 2em;
@@ -163,18 +140,6 @@ ul li {
             border: 2px solid white;
         }
 
-        a.qiitalink:hover {
-            color: white;
-            background: #55c500;
-            border: 2px solid white;
-        }
-
-        a.gitlablink:hover {
-            color: white;
-            background: rgb(209, 80, 54);
-            border: 2px solid white;
-        }
-
         a.legacylink:hover {
             color: white;
             background: #4169e1;
@@ -198,18 +163,6 @@ ul li {
             background: #d6249f;
             background: -webkit-linear-gradient(45deg, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
             background: linear-gradient(45deg, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
-            border: 2px solid black;
-        }
-
-        a.qiitalink:hover {
-            color: white;
-            background: #55c500;
-            border: 2px solid black;
-        }
-
-        a.gitlablink:hover {
-            color: white;
-            background: rgb(209, 80, 54);
             border: 2px solid black;
         }
 
@@ -242,12 +195,6 @@ ul li {
     .link {
         max-width: 500px;
     }
-}
-
-.tophr {
-    background-color: greenyellow;
-    border: none;
-    height: 3px;
 }
 
 .title {
