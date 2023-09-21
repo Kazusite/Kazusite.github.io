@@ -191,7 +191,7 @@ ul li {
 /* Mobile */
 @media screen and (max-width: 500px) {
     .padding {
-        margin: 0.3rem;
+        margin: 0.5rem;
     }
 
     .link {
