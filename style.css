@@ -194,6 +194,10 @@ ul li {
         margin: 0.5rem;
     }
 
+    .profile {
+        margin-top: 3.5rem;
+    }
+
     .link {
         max-width: 500px;
     }
