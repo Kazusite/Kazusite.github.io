@@ -78,7 +78,11 @@ ul {
 
 ul li {
     line-height: 1.5;
-    padding: 0.5em 0;
+    padding: 0.5em 0.5em;
+}
+
+h3 {
+    margin: 5px;
 }
 
 /* バカでかい */
